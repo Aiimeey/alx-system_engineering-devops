@@ -1,2 +1,2 @@
 #!/bin/bash
-cat test | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+cat quote | tr 'A-Za-z' 'N-ZA-Mn-za-m'
