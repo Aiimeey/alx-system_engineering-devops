@@ -28,6 +28,6 @@ put screenshot_folder/*
 
 or 
 
-put screenshot
+put screenshot.png
 
 Push to GitHub: Once the screenshots are successfully transferred to the sandbox environment, you can proceed to push the screenshots to GitHub or follow your project's specific version control process.
