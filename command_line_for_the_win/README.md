@@ -5,7 +5,7 @@ tasks, and completing each task will add a project grade of over 100% to your av
 greater than your score on this project, your average might go down, so only take on this project if you're
 comfortable with the command line and enjoy a challenge. Have fun and improve your Bash skills!
 
-####  the steps followed to use the SFTP command-line tool :
+####  *the steps followed to use the SFTP command-line tool :*
 
 Take Screenshots: Take screenshots of the completed levels 
 
