@@ -18,4 +18,4 @@ For example, if your screenshots are in a directory called screenshot_folder, yo
 
 put screenshot_folder/*
 
-Push to GitHub: Once the screenshots are successfully transferred to the sandbox environment, you can proceed to push the screenshots to GitHub or follow your project's specific version control process.
+*Push to GitHub:* Once the screenshots are successfully transferred to the sandbox environment, you can proceed to push the screenshots to GitHub or follow your project's specific version control process.
