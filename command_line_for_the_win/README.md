@@ -1,6 +1,7 @@
 ## *Command Line for the Win*
 
-This is an optional project designed to challenge and improve your command line skills. It consists of multiple tasks take on this project if you're comfortable with the command line and enjoy a challenge. Have fun and improve your Bash skills! [cmd challenge](https://cmdchallenge.com/) 
+This is an optional project designed to challenge and improve your command line skills. It consists of multiple tasks take on this project if you're comfortable with the command line and enjoy a challenge. Have fun and improve your Bash skills!  
+[cmd challenge](https://cmdchallenge.com/) 
 ###  *the steps followed to use the SFTP command-line tool :*
 
 Open a terminal or command prompt on your local machine
