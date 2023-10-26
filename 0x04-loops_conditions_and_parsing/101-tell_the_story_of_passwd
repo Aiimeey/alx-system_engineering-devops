@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays the content of the file /etc/passwd.
+
+if [ -r "/etc/passwd" ]; then
+    while IFS=':' read -r username psswrd usr_ID g_id usr_inf home_dir cmd_shell; do
+        echo "The user $username is part of the $g_id gang, lives in $home_dir and rides $cmd_shell. $usr_ID's place is protected by the passcode $psswrd, more info about the user here: $usr_inf" 
+    done < /etc/passwd
+fi
