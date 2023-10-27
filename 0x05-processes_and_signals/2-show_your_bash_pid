@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# This script shows the PID of the Bash process.
+pgrep -a bash
