@@ -1,4 +1,4 @@
-0x0B. SSH Description
+### 0x0B. SSH Description
 
 This project focuses on understanding and implementing Secure Shell (SSH) for server access. You will be working with an Ubuntu server located in a distant datacenter and connecting to it using SSH with an RSA key pair. The project aims to enhance your knowledge of servers, SSH, RSA key pair creation, and client configuration.
 
