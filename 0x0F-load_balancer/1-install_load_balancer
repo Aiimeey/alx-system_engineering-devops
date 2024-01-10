@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script installs and configures HAproxy on a new Ubuntu machine
+# script installs and configures HAproxy on a new Ubuntu machine
 
 # Install HAproxy
 sudo apt-get update
