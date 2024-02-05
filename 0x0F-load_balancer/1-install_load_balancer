@@ -14,8 +14,8 @@ frontend http_front
 
 backend http_back
     balance roundrobin
-    server web-01 379654-web-01:80 check
-    server web-02 379654-web-02:80 check
+    server web-01 54.237.41.174:80 check
+    server web-02 54.175.224.162:80 check
 EOF'
 
 #sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
