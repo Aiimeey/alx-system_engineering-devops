@@ -1,25 +1,16 @@
 #!/usr/bin/env bash
-# add subdomain lb-01, www, web-01, web-02
+# Takes a subdomain and a domain and returns information about the subdomain
 
-# print output
-Print() {
-    local subdomains=("$@")
-    local domain="${subdomains[-1]}"
-    for ((i = 0; i < ${#subdomains[@]} - 1; i++)); do
-        dig_output=$(dig "${subdomains[$i]}.$domain")
-        RECORD_TYPE=$(echo "$dig_output" | awk '/^;; ANSWER SECTION:$/,/^$/ {if ($1 == domain_name) {print $4}}' domain_name="${subdomains[$i]}.$domain.")
-        DESTINATION=$(echo "$dig_output" | awk '/^;; ANSWER SECTION:$/,/^$/ {if ($1 == domain_name) {print $5}}' domain_name="${subdomains[$i]}.$domain.")
-        echo "The subdomain ${subdomains[$i]} is a $RECORD_TYPE record and points to $DESTINATION"
-    done
+print_info () {
+    dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
 }
 
-
-if [ $# -ne 0 ]; then
-    domain="$1"
-    if [ $# -eq 1 ]; then
-        Print "www" "lb-01" "web-01" "web-02" "$domain"
-    else
-        subdomain="$2"
-        Print "$subdomain" "$domain"
-    fi
+if [ "$#" -eq 2 ]
+then
+    print_info "$2.$1" "$2"
+else
+    print_info "www.$1" "www"
+    print_info "lb-01.$1" "lb-01"
+    print_info "web-01.$1" "web-01"
+    print_info "web-02.$1" "web-02"
 fi
