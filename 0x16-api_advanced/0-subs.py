@@ -11,6 +11,8 @@ header = {
 
 def number_of_subscribers(subreddit):
     """method doc"""
+    if type(subreddit) is not str or subreddit is None:
+        return 0
     try:
         url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
         response = requests.get(url, allow_redirects=False, headers=header)
