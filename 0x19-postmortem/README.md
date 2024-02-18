@@ -5,7 +5,8 @@
         End Time: February 18, 2024, 2:00 AM PST
 
     #### Impact:
-        The outage affected our primary web application, causing intermittent service disruptions and slowdowns. Approximately 30% of users experienced difficulties accessing the platform or encountered significant 
+        The outage affected our primary web application, causing intermittent service disruptions and slowdowns.
+        Approximately 30% of users experienced difficulties accessing the platform or encountered significant
         delays in page loading times.
 
     #### Root Cause:
@@ -62,7 +63,8 @@
         components more efficiently.
 
     #### Tasks to Address the Issue:
-        Implement automated load balancer configuration checks as part of the continuous integration/continuous deployment (CI/CD) pipeline.
+        Implement automated load balancer configuration checks as part of the continuous 
+        integration/continuous deployment (CI/CD) pipeline.
         Conduct a thorough review of system documentation to ensure accurate and up-to-date information 
         regarding load balancer configuration best practices.
         Schedule regular load balancer configuration reviews and audits to prevent similar incidents in 
