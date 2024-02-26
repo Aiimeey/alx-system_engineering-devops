@@ -1,0 +1,15 @@
+Install puppet
+
+$ apt-get install -y ruby=1:2.7+1 --allow-downgrades
+$ apt-get install -y ruby-augeas
+$ apt-get install -y ruby-shadow
+$ apt-get install -y puppet
+
+Install puppet-lint
+
+$ gem install puppet-lint
+
+puppet-lint --version
+puppet-lint 2.5.2
+ 
+puppet apply 0-create_a_file.pp
