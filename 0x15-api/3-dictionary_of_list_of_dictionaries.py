@@ -3,9 +3,11 @@
 """
 import json
 import requests
+import sys
+import re
 
 
-def GET():
+def GET(id):
     """GET : is function that get requests and print with right format"""
     URL = f'https://jsonplaceholder.typicode.com'
     USERS = requests.get(f"{URL}/users/{id}").json()
@@ -13,9 +15,9 @@ def GET():
     EMPLOYEE_NAME = USERS.get('username')
     users_data = {}
     for user in USERS:
-        id = user.get('id')
-        user_name = user.get('username')
-        todos = list(filter(lambda x: x.get('userId') == id, TODOS))
+        id_ = USERS.get('id')
+        user_name = USERS.get('username')
+        todos = list(filter(lambda x: x.get('userId') == id_, TODOS))
         user_data = list(map(
             lambda x: {
                 'username': user_name,
@@ -30,4 +32,6 @@ def GET():
 
 
 if __name__ == "__main__":
-        GET()
+    if len(sys.argv) > 1 and re.fullmatch(r'\d+', sys.argv[1]):
+        id = int(sys.argv[1])
+        GET(id)
