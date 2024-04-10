@@ -22,7 +22,7 @@ def GET(id):
         EMPLOYEE_NAME, len(NUMBER_OF_DONE_TASKS),
         len(TOTAL_NUMBER_OF_TASKS)))
     for TASK_TITLE in NUMBER_OF_DONE_TASKS:
-        print("     {}".format(TASK_TITLE.get('title')))
+        print("\t {}".format(TASK_TITLE.get('title')))
 
 
 if __name__ == "__main__":
