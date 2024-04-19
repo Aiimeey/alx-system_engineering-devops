@@ -23,7 +23,7 @@ server {
         alias /data/web_static/current/;
         index index.html;
    }
-        location /airbnb-onepage/ {
+    location /airbnb-onepage/ {
                 proxy_pass http://0.0.0.0:5000/airbnb-onepage/;
 }
 }
