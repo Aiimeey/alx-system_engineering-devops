@@ -3,7 +3,7 @@ sudo apt install python3-pip
 pip3 install Flask
 sudo netstat -tulnp | grep 5000
 # 15329/agent   
-kill 15329
+sudo kill 15329
 pip install gunicorn
 terminal 1 :gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
 terminal 2: curl 127.0.0.1:5000/airbnb-onepage/
