@@ -16,7 +16,7 @@ server
         }
 
         location / {
-                add_header X-Served-By "421588-web-01";
+                add_header X-Served-By "379654-web-01";
                 try_files $uri $uri/ =404;
         }
 
@@ -32,8 +32,5 @@ server
         }
         location /api/ {
                 proxy_pass http://0.0.0.0:5002;
-        }
-        if ($request_filename ~ redirect_me){
-                rewrite ^ https://th3-gr00t.tk/ permanent;
         }
 }
